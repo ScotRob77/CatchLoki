@@ -16,12 +16,15 @@ body {
   text-align: center;
   color: white;
   font-size: 4rem;
+  margin: 15px;
 }
 
 #rules {
   text-align: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 /* Start buttons */
@@ -29,7 +32,9 @@ button {
   background-color: red;
   color: white;
   font-family: 'Tapestry', cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 button:hover {
@@ -78,5 +83,5 @@ button:hover {
   font-family: 'Tapestry', cursive;
   font-size: 2rem;
   text-align: center;
-  position: fixed;
+  margin-top: 10px;
 }

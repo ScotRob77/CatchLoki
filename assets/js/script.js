@@ -1,11 +1,11 @@
 let easyStart = document.getElementById('easy-game')
 easyStart.addEventListener('click', startEasy)
-// let characters = document.getElementsByClassName('character')
+let characters = document.getElementsByClassName('character')
 var numTurnsSoFar = 0
 var score = 0
 var characterVisible = true
 var gameBoard = document.getElementById('game-board')
-//let characterClass = ""
+
 
 
 function startEasy() {
@@ -22,7 +22,6 @@ function easyGame() {
   if (numTurnsSoFar < 21) {
     setTimeout(easyGame, characterVisible ? 2500 : 2000);
   } else {
-    alert('You scored ' + score);
     window.location.reload()
   }
 
@@ -46,6 +45,8 @@ function newConfiguration() {
   let randomCharacter = Math.floor(Math.random() * 6) + 1;
   gameBoard.children[randomCharacter - 1].innerHTML = "loki"
 }
+
+// Updates score
 
 function incrementScore() {
 
