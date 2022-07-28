@@ -5,7 +5,7 @@ body {
   padding: 0;
   border: 0;
   background-image: url(../images/valhalla.jpg);
-  background-size: cover;
+  background-size: 100%;
   background-position: cente;
   background-attachment: fixed;
   font-family: 'Tapestry', cursive;
@@ -35,7 +35,7 @@ body {
   text-align: center;
 }
 
-.tile {
+.character {
   background-color: red;
   background-size: cover;
   width: 150px;
@@ -58,4 +58,3 @@ body {
   background-color: blue;
   background-size: cover;
 }
-
