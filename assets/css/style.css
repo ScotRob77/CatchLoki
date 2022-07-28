@@ -24,6 +24,19 @@ body {
   font-size: 1.5rem;
 }
 
+/* Start buttons */
+button {
+  background-color: red;
+  color: white;
+  font-family: 'Tapestry', cursive;
+  font-size: 3rem;
+}
+
+button:hover {
+  background-color: white;
+  color: red;
+}
+
 /*Game area */
 
 #game-board {
@@ -57,4 +70,13 @@ body {
 .villain {
   background-color: blue;
   background-size: cover;
+}
+
+/* Score board */
+.scores {
+  color: white;
+  font-family: 'Tapestry', cursive;
+  font-size: 2rem;
+  text-align: center;
+  position: fixed;
 }

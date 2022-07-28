@@ -40,12 +40,18 @@ function flashCharacters() {
 function newConfiguration() {
   for (let i = 0; i < 6; i++) {
     gameBoard.children[i].innerHTML = "thor";
-    gameBoard.children[i].onclick = function () {
-      score++
-    }
+    gameBoard.children[i].onclick = incrementScore
+
   }
   let randomCharacter = Math.floor(Math.random() * 6) + 1;
   gameBoard.children[randomCharacter - 1].innerHTML = "loki"
+}
+
+function incrementScore() {
+
+  let oldScore = parseInt(document.getElementById("score").innerText);
+  document.getElementById("score").innerText = ++oldScore;
+
 }
 
 /*
