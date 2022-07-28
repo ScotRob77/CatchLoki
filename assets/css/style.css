@@ -24,8 +24,14 @@ body {
   font-size: 1.5rem;
 }
 
+/*Game area */
+
 #game-board {
   margin: 30px;
+  text-align: center;
+}
+
+.start {
   text-align: center;
 }
 
@@ -40,6 +46,3 @@ body {
   text-align: center;
 }
 
-.start {
-  text-align: center;
-}
