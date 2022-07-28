@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url(../images/valhalla.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Tapestry', cursive;
+
+}
+
+.heading {
+    text-align: center;
+    color: red;
+    font-size: 4rem;
+}
+
+#rules {
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+}
+
+#game-board {
+    margin: 30px;
+    text-align: center;
+}
