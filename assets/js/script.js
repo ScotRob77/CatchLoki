@@ -1,6 +1,6 @@
 let easyStart = document.getElementById('easy-game')
 easyStart.addEventListener('click', startEasy)
-// let tiles = document.getElementsByClassName('tile')
+// let charcters = document.getElementsByClassName('charcter')
 var numTurnsSoFar = 0
 let score = 0
 var characterVisible = false
@@ -15,12 +15,12 @@ function startEasy() {
 
 // Easy game
 function easyGame() {
-  characterVisible = !characterVisible
-  newConfiguration()
-  flashCharacters()
-  numTurnsSoFar++
+  characterVisible = !characterVisible;
+  newConfiguration();
+  flashCharacters();
+  numTurnsSoFar++;
   if (numTurnsSoFar < 10) {
-    setTimeout(easyGame, 3000)
+    setTimeout(easyGame, 3000);
   } else {
     alert('Game Over');
   }
@@ -36,8 +36,10 @@ function flashCharacters() {
 
 function newConfiguration() {
   for (let i = 0; i < 6; i++) {
-    gameBoard.children[i].innerHTML = "guest"
+    gameBoard.children[i].innerHTML = "thor"
   }
+  let randomCharacter = Math.floor(Math.random() * 6) + 1;
+  gameBoard.children[randomCharacter - 1].innerHTML = "loki"
 }
 
 /*
