@@ -1,6 +1,7 @@
 let easyStart = document.getElementById('easy-game')
 easyStart.addEventListener('click', startEasy)
-let characters = document.getElementsByClassName('character')
+//let characters = document.getElementsByClassName('character')
+//characters[5].innerHTML = "img src='images/thor.png"
 var numTurnsSoFar = 0
 var score = 0
 var characterVisible = true
@@ -38,12 +39,15 @@ function flashCharacters() {
 // Sets configuration of characters
 function newConfiguration() {
   for (let i = 0; i < 6; i++) {
-    gameBoard.children[i].innerHTML = "thor";
-    gameBoard.children[i].onclick = incrementScore
+    gameBoard.children[i].innerHTML = 'thor';
+    gameBoard.children[i].onclick = function () {
+      incrementScore = + -2;
+    }
 
   }
   let randomCharacter = Math.floor(Math.random() * 6) + 1;
   gameBoard.children[randomCharacter - 1].innerHTML = "loki"
+  gameBoard.children[randomCharacter - 1].onclick = incrementScore;
 }
 
 // Updates score
