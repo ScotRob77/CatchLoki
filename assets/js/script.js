@@ -19,8 +19,8 @@ function easyGame() {
   newConfiguration();
   flashCharacters();
   numTurnsSoFar++;
-  if (numTurnsSoFar < 10) {
-    setTimeout(easyGame, 3000);
+  if (numTurnsSoFar < 21) {
+    setTimeout(easyGame, characterVisible ? 2500 : 2000);
   } else {
     alert('You scored ' + score);
   }
@@ -34,6 +34,7 @@ function flashCharacters() {
   }
 }
 
+// Sets configuration of characters
 function newConfiguration() {
   for (let i = 0; i < 6; i++) {
     gameBoard.children[i].innerHTML = "thor";
