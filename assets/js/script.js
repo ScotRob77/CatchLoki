@@ -1,9 +1,9 @@
 let easyStart = document.getElementById('easy-game')
 easyStart.addEventListener('click', startEasy)
-// let charcters = document.getElementsByClassName('charcter')
+// let characters = document.getElementsByClassName('character')
 var numTurnsSoFar = 0
-let score = 0
-var characterVisible = false
+var score = 0
+var characterVisible = true
 var gameBoard = document.getElementById('game-board')
 //let characterClass = ""
 
@@ -22,7 +22,7 @@ function easyGame() {
   if (numTurnsSoFar < 10) {
     setTimeout(easyGame, 3000);
   } else {
-    alert('Game Over');
+    alert('You scored ' + score);
   }
 }
 
@@ -36,7 +36,10 @@ function flashCharacters() {
 
 function newConfiguration() {
   for (let i = 0; i < 6; i++) {
-    gameBoard.children[i].innerHTML = "thor"
+    gameBoard.children[i].innerHTML = "thor";
+    gameBoard.children[i].onclick = function () {
+      score++
+    }
   }
   let randomCharacter = Math.floor(Math.random() * 6) + 1;
   gameBoard.children[randomCharacter - 1].innerHTML = "loki"
