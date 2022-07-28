@@ -46,3 +46,16 @@ body {
   text-align: center;
 }
 
+.hidden {
+  display: none
+}
+
+.visible {
+  display: inline-block;
+}
+
+.villain {
+  background-color: blue;
+  background-size: cover;
+}
+
