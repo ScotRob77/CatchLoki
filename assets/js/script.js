@@ -23,7 +23,9 @@ function easyGame() {
     setTimeout(easyGame, characterVisible ? 2500 : 2000);
   } else {
     alert('You scored ' + score);
+    window.location.reload()
   }
+
 }
 
 // Creates the characters to flash on and off
