@@ -5,8 +5,8 @@ body {
   padding: 0;
   border: 0;
   background-image: url(../images/valhalla.jpg);
-  background-size: 100%;
-  background-position: center;
+  background-size: cover;
+  background-position: cente;
   background-attachment: fixed;
   font-family: 'Tapestry', cursive;
 
@@ -14,13 +14,13 @@ body {
 
 .heading {
   text-align: center;
-  color: red;
+  color: white;
   font-size: 4rem;
 }
 
 #rules {
   text-align: center;
-  color: red;
+  color: white;
   font-size: 1.5rem;
 }
 
@@ -37,5 +37,9 @@ body {
   padding: 10px;
   margin: 10px;
   display: inline-block;
+  text-align: center;
+}
+
+.start {
   text-align: center;
 }
