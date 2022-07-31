@@ -77,6 +77,10 @@ button:hover {
   background-size: cover;
 }
 
+.click-once {
+  pointer-events: none;
+}
+
 /* Score board */
 .scores {
   color: white;
@@ -84,4 +88,8 @@ button:hover {
   font-size: 2rem;
   text-align: center;
   margin-top: 10px;
+}
+
+#score-board {
+  text-align: center;
 }
