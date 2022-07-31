@@ -54,7 +54,7 @@ button:hover {
 }
 
 .character {
-  background-color: red;
+  background: url(../images/thor.png);
   background-size: cover;
   width: 150px;
   height: 150px;
@@ -72,8 +72,8 @@ button:hover {
   display: inline-block;
 }
 
-.villain {
-  background-color: blue;
+.loki {
+  background: url(../images/loki.png);
   background-size: cover;
 }
 

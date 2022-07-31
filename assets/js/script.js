@@ -6,6 +6,9 @@ var numTurnsSoFar = 0
 var score = 0
 var characterVisible = true
 var gameBoard = document.getElementById('game-board')
+const rulesHide = document.querySelector('.js-rules');
+const easyHide = document.querySelector('.js-easy-start');
+const hardHide = document.querySelector('.js-hard-start');
 
 
 
@@ -16,6 +19,9 @@ function startEasy() {
 
 // Easy game
 function easyGame() {
+  rulesHide.classList.add('hidden');
+  easyHide.classList.add('hidden');
+  hardHide.classList.add('hidden');
   characterVisible = !characterVisible;
   newConfiguration();
   flashCharacters();
@@ -39,7 +45,7 @@ function flashCharacters() {
 // Sets configuration of characters
 function newConfiguration() {
   for (let i = 0; i < 6; i++) {
-    gameBoard.children[i].innerHTML = 'thor';
+    gameBoard.children[i].innerHTML = '';
     gameBoard.children[i].onclick = function () {
       incrementScore = + -2;
     }

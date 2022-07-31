@@ -11,15 +11,16 @@
 </head>
 <body>
   <h1 class="heading">CATCH LOKI</h1>
-  <p id="rules">Loki has escaped from Asgard and it is your job as Thor to catch him.
+  <p id="rules" class="js-rules">Loki has escaped from Asgard and it is your job as Thor to catch him.
       </br>
       Click the Easy or Hard Game button to start the game. Thor and Loki will disappear. 
       </br>
       Are you quick enough to click on Loki and bring him back to Asgard when he reappears.
   </p>
     <div class="start">
-      <span><button id="easy-game">Easy Game</button></span>
-      <span><button id="hard-game">Hard Game</button></span>
+      <span><button id="easy-game" class="js-easy-start">Easy Game</button></span>
+      <span><button id="hard-game" class="js-hard-start">Hard Game</button></span>
+      
     </div>
   <div id="game-board">
     <div class="character"></div>
@@ -30,9 +31,12 @@
     <div class="character"></div>
   </div>
 
+  <footer>
   <div>
     <p class="scores">Score <span id="score">0</span></p>
+    <span class="info js-info hidden"></span>
   </div>
+</footer>
     
   <script src="assets/js/script.js"></script>
 </body>
