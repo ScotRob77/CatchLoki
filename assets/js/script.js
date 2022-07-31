@@ -9,7 +9,8 @@ var gameBoard = document.getElementById('game-board')
 const rulesHide = document.querySelector('.js-rules');
 const easyHide = document.querySelector('.js-easy-start');
 const hardHide = document.querySelector('.js-hard-start');
-
+const scoreTotal = document.querySelector('.js-scores');
+const info = document.querySelector('.js-info');
 
 
 function startEasy() {
@@ -22,6 +23,8 @@ function easyGame() {
   rulesHide.classList.add('hidden');
   easyHide.classList.add('hidden');
   hardHide.classList.add('hidden');
+  scoreTotal.classList.remove('hidden');
+  info.classList.remove('hidden');
   characterVisible = !characterVisible;
   newConfiguration();
   flashCharacters();
@@ -31,8 +34,8 @@ function easyGame() {
   } else {
     window.location.reload()
   }
-
 }
+
 
 // Creates the characters to flash on and off
 function flashCharacters() {
