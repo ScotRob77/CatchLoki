@@ -53,7 +53,7 @@ button:hover {
   text-align: center;
 }
 
-.character {
+.tile {
   background: url(../images/thor.png);
   background-size: cover;
   width: 150px;

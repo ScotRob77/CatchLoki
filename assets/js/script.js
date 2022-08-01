@@ -4,7 +4,7 @@ easyStart.addEventListener('click', startEasy)
 //characters[5].innerHTML = "img src='images/thor.png"
 var numTurnsSoFar = 0
 var score = 0
-var characterVisible = true
+var tileVisible = true
 var gameBoard = document.getElementById('game-board')
 const rulesHide = document.querySelector('.js-rules');
 const easyHide = document.querySelector('.js-easy-start');
@@ -14,59 +14,63 @@ const info = document.querySelector('.js-info');
 
 
 function startEasy() {
+  rulesHide.classList.add('hidden');
+  easyHide.classList.add('hidden');
+  hardHide.classList.add('hidden');
+  scoreTotal.classList.remove('hidden');
+  info.classList.remove('hidden');
   easyGame();
 }
 
 
 // Easy game
 function easyGame() {
-  rulesHide.classList.add('hidden');
-  easyHide.classList.add('hidden');
-  hardHide.classList.add('hidden');
-  scoreTotal.classList.remove('hidden');
-  info.classList.remove('hidden');
-  characterVisible = !characterVisible;
+  tileVisible = !tileVisible;
   newConfiguration();
-  flashCharacters();
   numTurnsSoFar++;
-  if (numTurnsSoFar < 21) {
-    setTimeout(easyGame, characterVisible ? 2500 : 2000);
+  if (numTurnsSoFar >= 10) {
+    stopGame()
   } else {
-    window.location.reload()
+    setTimeout(easyGame, tileVisible ? 2500 : 2000);
+
   }
 }
 
 
 // Creates the characters to flash on and off
-function flashCharacters() {
-  var characterClass = characterVisible ? 'character visible' : 'character hidden';
-  for (let i = 0; i < 6; i++) {
-    gameBoard.children[i].className = characterClass
-  }
-}
-
 // Sets configuration of characters
 function newConfiguration() {
-  for (let i = 0; i < 6; i++) {
+  var classToSet = tileVisible ? "tile visible" : "tile hidden";
+  for (var i = 0; i < 6; i++) {
+    gameBoard.children[i].className = classToSet
     gameBoard.children[i].innerHTML = '';
     gameBoard.children[i].onclick = function () {
-      incrementScore = + -2;
+      score = + -2;
     }
-
   }
-  let randomCharacter = Math.floor(Math.random() * 6) + 1;
-  gameBoard.children[randomCharacter - 1].innerHTML = "loki"
-  gameBoard.children[randomCharacter - 1].onclick = incrementScore;
+
+  var randomHero = Math.floor(Math.random() * 6) + 1;
+  gameBoard.children[randomHero - 1].innerHTML = ""
+  gameBoard.children[randomHero - 1].onclick.incrementScore;
+  gameBoard.children[randomHero - 1].className = classToSet + " loki"
 }
+
 
 // Updates score
 
 function incrementScore() {
 
   let oldScore = parseInt(document.getElementById("score").innerText);
-  document.getElementById("score").innerText = ++oldScore;
+  document.getElementById("score").innerText = +1;
 
 }
+
+// Shows final score and reloads window
+function stopGame() {
+  alert('You scored ' + score)
+  window.location.reload()
+}
+
 
 /*
 1. Game flow:
