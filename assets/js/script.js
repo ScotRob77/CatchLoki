@@ -114,7 +114,21 @@ function newConfiguration() {
 
 // Shows final score and reloads window
 function stopGame() {
-  alert('You scored ' + score)
+  if (score >= 10) {
+    info.classList.add('hidden')
+    scoreTotal.textContent = ('Congratulations.. You scored 10 and captured Loki')
+    easyHide.classList.remove('hidden');
+    hardHide.classList.remove('hidden');
+    vHardHide.classList.remove('hidden');
+    resetGame()
+  } else {
+
+    alert('You scored ' + score)
+    window.location.reload()
+  }
+}
+
+function resetGame() {
   window.location.reload()
 }
 
