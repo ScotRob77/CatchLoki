@@ -4,6 +4,9 @@ easyStart.addEventListener('click', startEasy)
 let hardStart = document.getElementById('hard-game')
 hardStart.addEventListener('click', startHard)
 
+let vHardStart = document.getElementById('v-hard-game')
+vHardStart.addEventListener('click', startVHard)
+
 //let characters = document.getElementsByClassName('character')
 //characters[5].innerHTML = "img src='images/thor.png"
 var numTurnsSoFar = 0
@@ -13,6 +16,7 @@ var gameBoard = document.getElementById('game-board')
 const rulesHide = document.querySelector('.js-rules');
 const easyHide = document.querySelector('.js-easy-start');
 const hardHide = document.querySelector('.js-hard-start');
+const vHardHide = document.querySelector('.js-vhard-start');
 var scoreTotal = document.querySelector('.js-scores');
 const info = document.querySelector('.js-info');
 
@@ -21,6 +25,7 @@ function startEasy() {
   rulesHide.classList.add('hidden');
   easyHide.classList.add('hidden');
   hardHide.classList.add('hidden');
+  vHardHide.classList.add('hidden');
   scoreTotal.classList.remove('hidden');
   info.classList.remove('hidden');
   easyGame();
@@ -30,9 +35,20 @@ function startHard() {
   rulesHide.classList.add('hidden');
   easyHide.classList.add('hidden');
   hardHide.classList.add('hidden');
+  vHardHide.classList.add('hidden');
   scoreTotal.classList.remove('hidden');
   info.classList.remove('hidden');
   hardGame();
+}
+
+function startVHard() {
+  rulesHide.classList.add('hidden');
+  easyHide.classList.add('hidden');
+  hardHide.classList.add('hidden');
+  vHardHide.classList.add('hidden');
+  scoreTotal.classList.remove('hidden');
+  info.classList.remove('hidden');
+  vHardGame();
 }
 
 
@@ -57,11 +73,23 @@ function hardGame() {
   if (numTurnsSoFar >= 40) {
     stopGame()
   } else {
-    setTimeout(hardGame, tileVisible ? 750 : 1500);
+    setTimeout(hardGame, tileVisible ? 1000 : 1500);
     numTurnsSoFar += 1
   }
 }
 
+// very hard game
+function vHardGame() {
+  tileVisible = !tileVisible;
+  newConfiguration();
+  numTurnsSoFar++;
+  if (numTurnsSoFar >= 40) {
+    stopGame()
+  } else {
+    setTimeout(vHardGame, tileVisible ? 700 : 1500);
+    numTurnsSoFar += 1
+  }
+}
 
 // Creates the characters to flash on and off
 // Sets configuration of characters
