@@ -1,5 +1,9 @@
 let easyStart = document.getElementById('easy-game')
 easyStart.addEventListener('click', startEasy)
+
+let hardStart = document.getElementById('hard-game')
+hardStart.addEventListener('click', startHard)
+
 //let characters = document.getElementsByClassName('character')
 //characters[5].innerHTML = "img src='images/thor.png"
 var numTurnsSoFar = 0
@@ -9,7 +13,7 @@ var gameBoard = document.getElementById('game-board')
 const rulesHide = document.querySelector('.js-rules');
 const easyHide = document.querySelector('.js-easy-start');
 const hardHide = document.querySelector('.js-hard-start');
-const scoreTotal = document.querySelector('.js-scores');
+var scoreTotal = document.querySelector('.js-scores');
 const info = document.querySelector('.js-info');
 
 
@@ -22,17 +26,39 @@ function startEasy() {
   easyGame();
 }
 
+function startHard() {
+  rulesHide.classList.add('hidden');
+  easyHide.classList.add('hidden');
+  hardHide.classList.add('hidden');
+  scoreTotal.classList.remove('hidden');
+  info.classList.remove('hidden');
+  hardGame();
+}
+
 
 // Easy game
 function easyGame() {
   tileVisible = !tileVisible;
   newConfiguration();
   numTurnsSoFar++;
-  if (numTurnsSoFar >= 10) {
+  if (numTurnsSoFar >= 40) {
     stopGame()
   } else {
     setTimeout(easyGame, tileVisible ? 2500 : 2000);
+    numTurnsSoFar += 1
+  }
+}
 
+// Hard game
+function hardGame() {
+  tileVisible = !tileVisible;
+  newConfiguration();
+  numTurnsSoFar++;
+  if (numTurnsSoFar >= 40) {
+    stopGame()
+  } else {
+    setTimeout(hardGame, tileVisible ? 750 : 1500);
+    numTurnsSoFar += 1
   }
 }
 
@@ -44,26 +70,18 @@ function newConfiguration() {
   for (var i = 0; i < 6; i++) {
     gameBoard.children[i].className = classToSet
     gameBoard.children[i].innerHTML = '';
-    gameBoard.children[i].onclick = function () {
-      score = + -2;
-    }
+
   }
 
   var randomHero = Math.floor(Math.random() * 6) + 1;
   gameBoard.children[randomHero - 1].innerHTML = ""
-  gameBoard.children[randomHero - 1].onclick.incrementScore;
+  gameBoard.children[randomHero - 1].onclick = function () {
+    score += 1
+  };
   gameBoard.children[randomHero - 1].className = classToSet + " loki"
 }
 
 
-// Updates score
-
-function incrementScore() {
-
-  let oldScore = parseInt(document.getElementById("score").innerText);
-  document.getElementById("score").innerText = +1;
-
-}
 
 // Shows final score and reloads window
 function stopGame() {
