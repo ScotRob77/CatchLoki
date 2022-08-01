@@ -19,6 +19,7 @@ const hardHide = document.querySelector('.js-hard-start');
 const vHardHide = document.querySelector('.js-vhard-start');
 var scoreTotal = document.querySelector('.js-scores');
 const info = document.querySelector('.js-info');
+const reset = document.querySelector('js-reset');
 
 
 function startEasy() {
@@ -117,9 +118,7 @@ function stopGame() {
   if (score >= 10) {
     info.classList.add('hidden')
     scoreTotal.textContent = ('Congratulations.. You scored 10 and captured Loki')
-    easyHide.classList.remove('hidden');
-    hardHide.classList.remove('hidden');
-    vHardHide.classList.remove('hidden');
+    reset.classList.remove('hidden')
     resetGame()
   } else {
 
@@ -129,7 +128,7 @@ function stopGame() {
 }
 
 function resetGame() {
-  window.location.reload()
+  onclick.window.location.reload()
 }
 
 
