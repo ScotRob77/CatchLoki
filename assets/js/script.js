@@ -107,6 +107,7 @@ function newConfiguration() {
     score += 1
   };
   gameBoard.children[randomHero - 1].className = classToSet + " loki"
+
 }
 
 
