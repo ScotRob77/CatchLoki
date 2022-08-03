@@ -1,5 +1,5 @@
 # Catch Loki
-Description
+Catch Loki is a quick fire game which has 3 user levels and is based on the Norse mythology of Thor, Loki and Asgard which has been recently played out on the big screen in Marvels Thor and Avenger movies. When the user starts the game the Thor images disappear. When they reappear one of them is Loki. The user has to click on Loki before all the images disappear again.
 
 [Link to live website] (enter here)
 
@@ -18,65 +18,54 @@ Description
 * Credits
 
 # User Experience (UX)
-### First time visitor goals
-* As a first time visitor, I want to be able to easily navigate the site.
-*
-### Returning visitor goals
-* As a returning visitor, 
-* As a returning visitor, 
+### First time user goals
+* As a first time user, I want to be able to easily understand how to play the game.
+* As a first time user, I would like to have the game bright and welcoming.
+* As a first time user, I would like to see my score.
+* As a first time user I would like to have the option to play different levels.
+### Returning user goals
+* As a returning user, I would like to be able to play a harder or easy game depending on my skill level.
 ### Reasons a user may visit the website
-* A user is looking to take their hill walking to the next level.
-* 
+* A user is looking to play a quick game which doesn't take long.
+* A user is aware of the Marvel franchise and would like to play a game which is related.
+* A user would like to play a game which has various levels.
 
 # Features
 ## Existing Features
-### Company logo
-* Featured on every page the logo also has a link to the home page.
-### Navigation Bar
-* Featured on all 4 pages the navigation bar is resonsive and highlights which page the user is on by being 
-![Screenshot logo-navbar](https://github.com/ScotRob77/mountain-top-guides/blob/main/assets/images/new_header_screenshot.jpg?raw=true)
+### Title
+* Uses a well known Norse mythology and Avengers character, so the game title is instantly recognisable.
+![Title](assets/images/README/catchLokiTitle.jpg)
+### Rules
+* Tells the user how to play the game in a fun and challenging way
+![Rules image](assets/images/README/catchLokiRules.jpg)
 
-### Hero image
-*
+### Game buttons
+* There are 3 game buttons giving the user the opportunity to try harder levels
+![Game buttons](assets/images/README/catchLokiButtons.jpg)
 
-### Who we are section
-* This section shows the user who works for Mountain Top Guides by using photos of the two guides and text 
+### Characters
+* The home screen starts with 6 Thor characters. When the game starts the characters disappear and reappear with one of them as Loki
+![Characters](assets/images/README/catchLokiCharacters.jpg)
+![Loki](assets/images/README/catchLokiCharacters2.jpg)
 
-### Contact details
-* This section is used across 3 of the 4 pages, but not the Want to join page as there is other ways of contacting 
-
-
-### Footer
-* This section which is on all pages gives links to social media pages, Facebook, Instagram and Youtube. They will 
-
-
-### What we do page
-* This page has 3 sections ordered vertically and will show what Mountain Top Guides has to offer. An alluring i
-
-
-### Where we go page
-* This page will provide the user with thumbnail images showing the scenery seen on previous trips and what the 
-
-
-### Want to join page
-* This page will give the user the opportunity to find out more and to ask specific questions
-
-* 
+### Score
+* A score tallies up as the game is played
+![Score](assets/images/README/catchLokiScore.jpg)
 
 ### Future features
-* 
-* 
+* Add more hero characters
+* Incorporate more sound to the game
 
 # Typography and color scheme
 * I want a font that make the game feel a bit futuristic and thought 'Tapestry' worked very well [Google Fonts](https://www.Fonts.google.com)
 * I want a relevant background to the game so will use a cartoon interpretation of Asgard and the bi-frost which is used to travel through space from Asgard. 
+![Background Image](assets/images/valhalla.jpg)
 
 # Wireframes
 
-![Wireframes](assets/docs/README-files/who_we_are_wf.png)
-![Wirefames](assets/docs/README-files/what_we_do_wf.png)
-![Wireframes](assets/docs/README-files/where_we_go_wf.png)
-![Wireframes](assets/docs/README-files/want_%20to_%20join_wf.png)
+![Wireframes](assets/images/README/catchLokiWF1.png)
+![Wirefames](assets/images/README/catchLokiWF2.png)
+
 
 # Technologies used
 * [HTML](https://en.wikipedia.org/wiki/HTML5) 
@@ -125,19 +114,20 @@ The navigation bar at the top of the page is easily readable and identifiable.
      * Once the Main Branch has been selected and saved the page provides the link to the completed website
      * Any changes made to the main branch and pushed to Github will take effect on the live project.
 
-The live link can be found here [Mountain Top Guides](https://scotrob77.github.io/mountain-top-guides/index.html)
+The live link can be found here [Catch Loki]()
 
 ### Cloning
-* Go to https://github.com/ScotRob77/mountain-top-guides repsoitory on Github
+* Go to https://github.com/ScotRob77/CatchLoki repsoitory on Github
 * Click 'Code' which is to the left of the Gitpod button
 * Copy link
 * Open a Gitbash terminal and navigate to the directory where you want to locate the clone
 * On the command line, type 'git clone' and paste the copied url. Press Enter to begin
 
 # Credits
-* Background Image by Al Seeger from Pixabay
-* Loki Image by Heather Ivory from Pixabay
-* Thor Image by Andre Santana AndreMS from Pixabay
+### Content
+*
 
 ### Media
-* 
+* Background Image by Al Seeger from [Pixabay](https://pixabay.com)
+* Loki Image by Heather Ivory from [Pixabay](https://pixabay.com)
+* Thor Image by Andre Santana AndreMS from [Pixabay](https://pixabay.com)

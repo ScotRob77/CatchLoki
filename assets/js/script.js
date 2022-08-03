@@ -7,8 +7,6 @@ hardStart.addEventListener('click', startHard)
 let vHardStart = document.getElementById('v-hard-game')
 vHardStart.addEventListener('click', startVHard)
 
-//let characters = document.getElementsByClassName('character')
-//characters[5].innerHTML = "img src='images/thor.png"
 var numTurnsSoFar = 0
 var score = 0
 var tileVisible = true
@@ -78,6 +76,7 @@ function hardGame() {
   } else {
     setTimeout(hardGame, tileVisible ? 1000 : 1500);
     numTurnsSoFar += 1
+    scoreShow.textContent = score;
   }
 }
 
@@ -91,6 +90,7 @@ function vHardGame() {
   } else {
     setTimeout(vHardGame, tileVisible ? 700 : 1500);
     numTurnsSoFar += 1
+    scoreShow.textContent = score;
   }
 }
 
@@ -119,7 +119,7 @@ function newConfiguration() {
 function stopGame() {
   if (score >= 10) {
     info.classList.add('hidden')
-    scoreTotal.textContent = ('Congratulations.. You scored 10 and captured Loki')
+    scoreTotal.textContent = ('Congratulations.. You captured Loki and brought him back to Asgard')
     reset.classList.remove('hidden')
     resetGame()
   } else {
