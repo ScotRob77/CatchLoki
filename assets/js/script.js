@@ -15,8 +15,8 @@ const rulesHide = document.querySelector('.js-rules');
 const easyHide = document.querySelector('.js-easy-start');
 const hardHide = document.querySelector('.js-hard-start');
 const vHardHide = document.querySelector('.js-vhard-start');
-var scoreTotal = document.querySelector('.js-scores');
-const info = document.querySelector('.js-info');
+var scoreTotal = document.querySelector('.js-score');
+const scoreTitle = document.querySelector('.js-scores');
 const reset = document.querySelector('js-reset');
 const scoreShow = document.querySelector('#score')
 
@@ -27,7 +27,7 @@ function startEasy() {
   hardHide.classList.add('hidden');
   vHardHide.classList.add('hidden');
   scoreTotal.classList.remove('hidden');
-  info.classList.remove('hidden');
+  scoreTitle.classList.remove('hidden');
   easyGame();
 }
 
@@ -37,7 +37,7 @@ function startHard() {
   hardHide.classList.add('hidden');
   vHardHide.classList.add('hidden');
   scoreTotal.classList.remove('hidden');
-  info.classList.remove('hidden');
+  scoreTitle.classList.remove('hidden');
   hardGame();
 }
 
@@ -47,7 +47,7 @@ function startVHard() {
   hardHide.classList.add('hidden');
   vHardHide.classList.add('hidden');
   scoreTotal.classList.remove('hidden');
-  info.classList.remove('hidden');
+  scoreTitle.classList.remove('hidden');
   vHardGame();
 }
 
@@ -118,10 +118,11 @@ function newConfiguration() {
 // Shows final score and reloads window
 function stopGame() {
   if (score >= 10) {
-    info.classList.add('hidden')
+    scoreTitle.classList.add('hidden');
+    reset.classList.remove('hidden');
     scoreTotal.textContent = ('Congratulations.. You captured Loki and brought him back to Asgard')
-    reset.classList.remove('hidden')
-    resetGame()
+
+    // resetGame()
   } else {
 
     alert('You scored ' + score)
