@@ -20,6 +20,7 @@ const vHardHide = document.querySelector('.js-vhard-start');
 var scoreTotal = document.querySelector('.js-scores');
 const info = document.querySelector('.js-info');
 const reset = document.querySelector('js-reset');
+const scoreShow = document.querySelector('#score')
 
 
 function startEasy() {
@@ -63,6 +64,7 @@ function easyGame() {
   } else {
     setTimeout(easyGame, tileVisible ? 2500 : 2000);
     numTurnsSoFar += 1
+    scoreShow.textContent = score;
   }
 }
 
