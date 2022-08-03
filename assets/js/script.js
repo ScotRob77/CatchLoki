@@ -7,6 +7,9 @@ hardStart.addEventListener('click', startHard)
 let vHardStart = document.getElementById('v-hard-game')
 vHardStart.addEventListener('click', startVHard)
 
+let gameReset = document.querySelector('#reset-game')
+gameReset.addEventListener('click', resetGame)
+
 var numTurnsSoFar = 0
 var score = 0
 var tileVisible = true
@@ -17,7 +20,7 @@ const hardHide = document.querySelector('.js-hard-start');
 const vHardHide = document.querySelector('.js-vhard-start');
 var scoreTotal = document.querySelector('.js-score');
 const scoreTitle = document.querySelector('.js-scores');
-const reset = document.querySelector('js-reset');
+const reset = document.querySelector('.js-reset');
 const scoreShow = document.querySelector('#score')
 
 
@@ -115,23 +118,21 @@ function newConfiguration() {
 
 
 
-// Shows final score and reloads window
+// Shows user message and reloads window
 function stopGame() {
   if (score >= 10) {
     scoreTitle.classList.add('hidden');
+    scoreTotal.textContent = ('Congratulations.. You captured Loki and brought him back to Asgard');
     reset.classList.remove('hidden');
-    scoreTotal.textContent = ('Congratulations.. You captured Loki and brought him back to Asgard')
-
-    // resetGame()
   } else {
-
-    alert('You scored ' + score)
-    window.location.reload()
+    scoreTitle.classList.add('hidden');
+    scoreTotal.textContent = ('Oh No... Loki got away. Try again to see if you can catch him ');
+    reset.classList.remove('hidden');
   }
 }
 
 function resetGame() {
-  onclick.window.location.reload()
+  window.location.reload()
 }
 
 
