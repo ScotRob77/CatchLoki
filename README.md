@@ -1,21 +1,35 @@
 # Catch Loki
 Catch Loki is a quick fire game which has 3 user levels and is based on the Norse mythology of Thor, Loki and Asgard which has been recently played out on the big screen in Marvels Thor and Avenger movies. When the user opens the initial page they are greeted with the title, the rules, 3 game levels and 6 Thor characters. The user chooses which level they want to play. When the game starts the Thor images disappear. When they reappear one of them is Loki. The user has to click on Loki before all the images disappear again. The aim is to click on Loki on each occasion that the images appear. If the user hits the Loki image every time they get a 'Congratulations' message at the end telling them they have caught Loki and they should maybe try a harder level. If they lose, the user gets a message telling them to try again. The game is a fun way of passing time and is aimed at all ages.
 
-[Link to live website] (enter here)
+[Link to live website](https://scotrob77.github.io/CatchLoki/)
 
-![Screenshot Responsive]
+***
+
+![Screenshot Responsive](assets/images/README/catchLokiResponsive.jpg)
+
+***
 
 # Index
-* User Experience
-* Features
-* Typography and color scheme
-* Wireframes
-* Technologies used
-* Testing
-* Bugs
-* Validator testing
-* Deployment
-* Credits
+* [User Experience](#user-experience-ux)
+* [Features](#features)
+  * [Title](#title)
+  * [Rules](#rules)
+  * [Game Buttons](#game-buttons)
+  * [Characters](#characters)
+  * [Score](#score)
+  * [Reset button](#reset-button)
+* [Typography and color scheme](#typography-and-color-scheme)
+* [Wireframes](#wireframes)
+* [Technologies used](#technologies-used)
+* [Testing](#testing)
+  * [Testing User Stories](#testing-user-stories)
+* [Bugs](#bugs)
+* [Validator testing](#validator-testing)
+* [Deployment](#deployment)
+  * [Cloning/Forking](#cloningforking)
+* [Credits](#credits)
+
+***
 
 # User Experience (UX)
 ### First time user goals
@@ -30,6 +44,8 @@ Catch Loki is a quick fire game which has 3 user levels and is based on the Nors
 * A user is aware of the Marvel franchise and would like to play a game which is related.
 * A user would like to play a game which has various levels.
 * A user would like the options of playing on phone or laptop.
+
+***
 
 # Features
 ## Existing Features
@@ -78,15 +94,20 @@ Once the game has finished a reset button appears, which when pressed, takes the
 * Add more hero characters
 * Incorporate sound to the game
 
+***
+
 # Typography and color scheme
 * I want a font that makes the game feel a bit futuristic and 'Tapestry' works very well [Google Fonts](https://www.Fonts.google.com)
 * I want a relevant background to the game so will use a cartoon interpretation of Asgard and the bi-frost which is used to travel through space from Asgard. 
 ![Background Image](assets/images/valhalla.jpg)
 
+***
+
 # Wireframes
 ![Wireframes](assets/images/README/catchLokiWF1.png)
 ![Wirefames](assets/images/README/catchLokiWF2.png)
 
+***
 
 # Technologies used
 * [HTML](https://en.wikipedia.org/wiki/HTML5) 
@@ -98,6 +119,8 @@ Once the game has finished a reset button appears, which when pressed, takes the
 * [Balsamiq](https://balsamiq.com/)
 * [Google Fonts](https://fonts.google.com/)
 
+***
+
 # Testing
 * I tested that this page works on Chrome, Edge and Safari.
 * I confirmed that this project is responsive and works on all screen sizes using the dev tools available on Chrome and Edge.
@@ -106,16 +129,18 @@ Once the game has finished a reset button appears, which when pressed, takes the
 * I have confirmed that the reset button takes the user back to the home page.
 
 ##  Testing user stories
-* ##### As a first time user, I want to be able to easily understand how to play the game.
-On the home page the rules of how to play are written at the top of the page under the title
-* ##### As a first time user, I would like to have the game bright and welcoming.
-The game has a bright cartoon element with a colorful background image
-* ##### As a first time user, I would like to see my score and know how I did at the end of the game.
-The game has a score tallying as the user plays. At the end of the game there a message appears telling the user whether they 'caught Loki' or not
-* ##### As a first time user I would like to have the option to play different levels.
-There are 3 game options; Easy; Hard; Very Hard. The levels are sequentially harder as the user goes through the them.
+* #### As a first time user, I want to be able to easily understand how to play the game.
+  * On the home page the rules of how to play are written at the top of the page under the title
+* #### As a first time user, I would like to have the game bright and welcoming.
+  *  The game has a bright cartoon element with a colorful background image
+* #### As a first time user, I would like to see my score and know how I did at the end of the game.
+  * The game has a score tallying as the user plays. At the end of the game there a message appears telling the user whether they 'caught Loki' or not
+* #### As a first time user I would like to have the option to play different levels.
+  * There are 3 game options; Easy; Hard; Very Hard. The levels are sequentially harder as the user goes through the them.
+* #### As a returning user, I would like to be able to play a harder or easier game depending on my skill level.
+  * The option to play different levels is available and a message is suggested to try a harder level if you win the game
 
-
+***
 
 # Bugs
 ### Unsolved bugs
@@ -147,7 +172,7 @@ This project was deployed using the steps below with version releasing active. P
 1. The page automatically refreshed with a url displayed.
 1. Tested the link by clicking on the url.
 
-The live link can be found here [Catch Loki]()
+The live link can be found here [Catch Loki](https://scotrob77.github.io/CatchLoki/)
 
 ## Cloning/Forking
 To fork this website to either propose changes or to use as an idea for another website, follow these steps:
@@ -168,3 +193,4 @@ Further details on completing the final step can be found on GitHub's ['Fork a R
 * Background Image by Al Seeger from [Pixabay](https://pixabay.com)
 * Loki Image by Heather Ivory from [Pixabay](https://pixabay.com)
 * Thor Image by Andre Santana AndreMS from [Pixabay](https://pixabay.com)
+* Favicon Image generated using [Favicongenerator](https://www.favicongenerator.com/)
