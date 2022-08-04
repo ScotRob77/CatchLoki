@@ -1,5 +1,5 @@
 # Catch Loki
-Catch Loki is a quick fire game which has 3 user levels and is based on the Norse mythology of Thor, Loki and Asgard which has been recently played out on the big screen in Marvels Thor and Avenger movies. When the user starts the game the Thor images disappear. When they reappear one of them is Loki. The user has to click on Loki before all the images disappear again.
+Catch Loki is a quick fire game which has 3 user levels and is based on the Norse mythology of Thor, Loki and Asgard which has been recently played out on the big screen in Marvels Thor and Avenger movies. When the user opens the initial page they are greeted with the title, the rules, 3 game levels and 6 Thor characters. The user chooses which level they want to play. When the game starts the Thor images disappear. When they reappear one of them is Loki. The user has to click on Loki before all the images disappear again.
 
 [Link to live website] (enter here)
 
@@ -21,14 +21,15 @@ Catch Loki is a quick fire game which has 3 user levels and is based on the Nors
 ### First time user goals
 * As a first time user, I want to be able to easily understand how to play the game.
 * As a first time user, I would like to have the game bright and welcoming.
-* As a first time user, I would like to see my score.
+* As a first time user, I would like to see my score and know how I did at the end of the game.
 * As a first time user I would like to have the option to play different levels.
 ### Returning user goals
-* As a returning user, I would like to be able to play a harder or easy game depending on my skill level.
+* As a returning user, I would like to be able to play a harder or easier game depending on my skill level.
 ### Reasons a user may visit the website
 * A user is looking to play a quick game which doesn't take long.
 * A user is aware of the Marvel franchise and would like to play a game which is related.
 * A user would like to play a game which has various levels.
+* A user would like the options of playing on phone or laptop.
 
 # Features
 ## Existing Features
@@ -51,13 +52,20 @@ Catch Loki is a quick fire game which has 3 user levels and is based on the Nors
 ### Score
 * A score tallies up as the game is played
 ![Score](assets/images/README/catchLokiScore.jpg)
+* A message appears depending on how the user has done
+![Loser message](assets/images/README/catchLokiLose.jpg)
+![Winner message](assets/images/README/catchLokiWin.jpg)
+
+### Reset button
+* Once the game has finished a reset button appears taking the user back to the home page.
+![Reset button](assets/images/README/catchLokiReset.jpg)
 
 ### Future features
 * Add more hero characters
-* Incorporate more sound to the game
+* Incorporate sound to the game
 
 # Typography and color scheme
-* I want a font that make the game feel a bit futuristic and thought 'Tapestry' worked very well [Google Fonts](https://www.Fonts.google.com)
+* I want a font that makes the game feel a bit futuristic and 'Tapestry' works very well [Google Fonts](https://www.Fonts.google.com)
 * I want a relevant background to the game so will use a cartoon interpretation of Asgard and the bi-frost which is used to travel through space from Asgard. 
 ![Background Image](assets/images/valhalla.jpg)
 
@@ -82,16 +90,24 @@ Catch Loki is a quick fire game which has 3 user levels and is based on the Nors
 * I tested that this page works on Chrome, Edge and Safari.
 * I confirmed that this project is responsive and works on all screen sizes using the dev tools available on Chrome and Edge.
 * I confirmed that all text is readable and easy to understand.
-* I confirmed that all internal links work as they should.
-* I have confirmed that the Want to join form works: that it requires an entry in each field; will only accept a proper email format in the email field; and the submit button takes you to a thank you page.
+* I confirmed that the game buttons work as they should and the levels get gradually harder.
+* I have confirmed that the reset button takes the user back to the home page.
 
 ##  Testing user stories
-* ##### As a first time visitor, I want to be able to easily navigate the site.
-The navigation bar at the top of the page is easily readable and identifiable.
-*
+* ##### As a first time user, I want to be able to easily understand how to play the game.
+On the home page the rules of how to play are written at the top of the page under the title
+* ##### As a first time user, I would like to have the game bright and welcoming.
+The game has a bright cartoon element with a colorful background image
+* ##### As a first time user, I would like to see my score and know how I did at the end of the game.
+The game has a score tallying as the user plays. At the end of the game there a message appears telling the user whether they 'caught Loki' or not
+* ##### As a first time user I would like to have the option to play different levels.
+There are 3 game options; Easy; Hard; Very Hard. The levels are sequentially harder as the user goes through the levels
+
 
 
 # Bugs
+### Unsolved bugs
+* The score tallies on every click meaning the user can win if they have a quick finger without clicking on 'Loki' on every turn.
 ### Solved Bugs
 * 
 
