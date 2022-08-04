@@ -1,3 +1,4 @@
+// Button declarations
 let easyStart = document.getElementById('easy-game')
 easyStart.addEventListener('click', startEasy)
 
@@ -23,7 +24,7 @@ const scoreTitle = document.querySelector('.js-scores');
 const reset = document.querySelector('.js-reset');
 const scoreShow = document.querySelector('#score')
 
-
+// Functions for starting each game
 function startEasy() {
   rulesHide.classList.add('hidden');
   easyHide.classList.add('hidden');
@@ -54,7 +55,7 @@ function startVHard() {
   vHardGame();
 }
 
-
+// Credit to the book Get Coding on Walker Books for some of the following game code
 // Easy game
 function easyGame() {
   tileVisible = !tileVisible;
@@ -121,7 +122,7 @@ function newConfiguration() {
 
 
 
-// Shows user message and reloads window
+// Shows user message and calls reset button
 function stopGame() {
   if (score >= 10) {
     scoreTitle.classList.add('hidden');
@@ -134,29 +135,7 @@ function stopGame() {
   }
 }
 
+// Resets page to show game buttons
 function resetGame() {
   window.location.reload()
 }
-
-
-/*
-1. Game flow:
-
-a. When the user presses the start button
-
-   show new configuration
-
-b. When the user clicks on a character [tile] (when the game is active),
-
-   Update score (see 2)
-   show new configuration
-
-c. When we've reached the maximum number of turns, just stop the game
-
-2. Scoring
-a. If clicked on Loki, +1
-b. If clicked on Good guy, 0
-
-3. Stopping the game
-   Disable the tiles so they're not clickable
-*/
