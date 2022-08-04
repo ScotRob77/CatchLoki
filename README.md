@@ -114,10 +114,10 @@ There are 3 game options; Easy; Hard; Very Hard. The levels are sequentially har
 # Validator Testing
 ### HTML
 * No errors were returned when passing through the official W3C validator
-![w3c validator](assets/images/screenshot_no_errors.jpg)
+![w3c validator](assets/images/README/catchLokiW3.jpg)
 ### CSS
 * No errors were found when passing through the official (Jigsaw) validator
-![jigsaw validator](assets/images/screenshot_no_w3c_error.jpg)
+![jigsaw validator](assets/images/README/catchLokiCSS.jpg)
 ### Accessibility
 * I confirmed that the colours and fonts chosen are easy to read and accessible by running it through lighthouse in devtools
 ![validator](assets/images/lighthouse_screenshot.jpg)

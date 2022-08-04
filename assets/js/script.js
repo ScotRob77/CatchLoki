@@ -1,20 +1,20 @@
 // Button declarations
-let easyStart = document.getElementById('easy-game')
-easyStart.addEventListener('click', startEasy)
+let easyStart = document.getElementById('easy-game');
+easyStart.addEventListener('click', startEasy);
 
-let hardStart = document.getElementById('hard-game')
-hardStart.addEventListener('click', startHard)
+let hardStart = document.getElementById('hard-game');
+hardStart.addEventListener('click', startHard);
 
-let vHardStart = document.getElementById('v-hard-game')
-vHardStart.addEventListener('click', startVHard)
+let vHardStart = document.getElementById('v-hard-game');
+vHardStart.addEventListener('click', startVHard);
 
-let gameReset = document.querySelector('#reset-game')
-gameReset.addEventListener('click', resetGame)
+let gameReset = document.querySelector('#reset-game');
+gameReset.addEventListener('click', resetGame);
 
-var numTurnsSoFar = 0
-var score = 0
-var tileVisible = true
-var gameBoard = document.getElementById('game-board')
+var numTurnsSoFar = 0;
+var score = 0;
+var tileVisible = true;
+var gameBoard = document.getElementById('game-board');
 const rulesHide = document.querySelector('.js-rules');
 const easyHide = document.querySelector('.js-easy-start');
 const hardHide = document.querySelector('.js-hard-start');
@@ -23,7 +23,7 @@ var scoreTotal = document.querySelector('.js-score');
 const scoreTitle = document.querySelector('.js-scores');
 const reset = document.querySelector('.js-reset');
 const scoreShow = document.querySelector('#score');
-const loserMessage = document.querySelector('.loser')
+const loserMessage = document.querySelector('.loser');
 
 // Functions for starting each game
 function startEasy() {
@@ -71,10 +71,10 @@ function easyGame() {
   newConfiguration();
   numTurnsSoFar++;
   if (numTurnsSoFar >= 40) {
-    stopGame()
+    stopGame();
   } else {
     setTimeout(easyGame, tileVisible ? 2500 : 2000);
-    numTurnsSoFar += 1
+    numTurnsSoFar += 1;
     scoreShow.textContent = score;
   }
 }
@@ -85,10 +85,10 @@ function hardGame() {
   newConfiguration();
   numTurnsSoFar++;
   if (numTurnsSoFar >= 40) {
-    stopGame()
+    stopGame();
   } else {
     setTimeout(hardGame, tileVisible ? 1000 : 1500);
-    numTurnsSoFar += 1
+    numTurnsSoFar += 1;
     scoreShow.textContent = score;
   }
 }
@@ -99,10 +99,10 @@ function vHardGame() {
   newConfiguration();
   numTurnsSoFar++;
   if (numTurnsSoFar >= 40) {
-    stopGame()
+    stopGame();
   } else {
     setTimeout(vHardGame, tileVisible ? 700 : 1500);
-    numTurnsSoFar += 1
+    numTurnsSoFar += 1;
     scoreShow.textContent = score;
   }
 }
@@ -112,7 +112,7 @@ function vHardGame() {
 function newConfiguration() {
   var classToSet = tileVisible ? "tile visible" : "tile hidden";
   for (var i = 0; i < 6; i++) {
-    gameBoard.children[i].className = classToSet
+    gameBoard.children[i].className = classToSet;
     gameBoard.children[i].innerHTML = '';
     gameBoard.children[i].onclick = function () {
       score += 0;
@@ -120,24 +120,24 @@ function newConfiguration() {
   }
 
   var randomHero = Math.floor(Math.random() * 6) + 1;
-  gameBoard.children[randomHero - 1].innerHTML = ""
+  gameBoard.children[randomHero - 1].innerHTML = "";
   gameBoard.children[randomHero - 1].onclick = function () {
     score += 1;
   }
-  gameBoard.children[randomHero - 1].className = classToSet + " loki"
+  gameBoard.children[randomHero - 1].className = classToSet + " loki";
 }
 
 // Shows user message and calls reset button
 function stopGame() {
   if (score >= 10) {
     scoreTitle.classList.add('hidden');
-    loserMessage.classList.remove('hidden')
+    loserMessage.classList.remove('hidden');
     loserMessage.textContent = (`Congratulations... You scored ${score} and captured Loki`);
     scoreTotal.textContent = ('Why not test your skill at a harder level');
     reset.classList.remove('hidden');
   } else {
-    scoreTitle.classList.add('hidden')
-    loserMessage.classList.remove('hidden')
+    scoreTitle.classList.add('hidden');
+    loserMessage.classList.remove('hidden');
     loserMessage.textContent = (`Oh No..... You only scored ${score}`);
     scoreTotal.textContent = (`Loki got away. Try again to see if you can catch him `);
     reset.classList.remove('hidden');
@@ -146,5 +146,5 @@ function stopGame() {
 
 // Resets page to show game buttons
 function resetGame() {
-  window.location.reload()
+  window.location.reload();
 }
