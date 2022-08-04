@@ -22,7 +22,8 @@ const vHardHide = document.querySelector('.js-vhard-start');
 var scoreTotal = document.querySelector('.js-score');
 const scoreTitle = document.querySelector('.js-scores');
 const reset = document.querySelector('.js-reset');
-const scoreShow = document.querySelector('#score')
+const scoreShow = document.querySelector('#score');
+const loserMessage = document.querySelector('.loser')
 
 // Functions for starting each game
 function startEasy() {
@@ -116,7 +117,6 @@ function newConfiguration() {
     gameBoard.children[i].onclick = function () {
       score += 0;
     }
-
   }
 
   var randomHero = Math.floor(Math.random() * 6) + 1;
@@ -131,11 +131,15 @@ function newConfiguration() {
 function stopGame() {
   if (score >= 10) {
     scoreTitle.classList.add('hidden');
-    scoreTotal.textContent = ('Congratulations.. You captured Loki and brought him back to Asgard');
+    loserMessage.classList.remove('hidden')
+    loserMessage.textContent = (`Congratulations... You scored ${score} and captured Loki`);
+    scoreTotal.textContent = ('Why not test your skill at a harder level');
     reset.classList.remove('hidden');
   } else {
-    scoreTitle.classList.add('hidden');
-    scoreTotal.textContent = ('Oh No... Loki got away. Try again to see if you can catch him ');
+    scoreTitle.classList.add('hidden')
+    loserMessage.classList.remove('hidden')
+    loserMessage.textContent = (`Oh No..... You only scored ${score}`);
+    scoreTotal.textContent = (`Loki got away. Try again to see if you can catch him `);
     reset.classList.remove('hidden');
   }
 }
