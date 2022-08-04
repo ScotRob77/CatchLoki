@@ -1,5 +1,5 @@
 # Catch Loki
-Catch Loki is a quick fire game which has 3 user levels and is based on the Norse mythology of Thor, Loki and Asgard which has been recently played out on the big screen in Marvels Thor and Avenger movies. When the user opens the initial page they are greeted with the title, the rules, 3 game levels and 6 Thor characters. The user chooses which level they want to play. When the game starts the Thor images disappear. When they reappear one of them is Loki. The user has to click on Loki before all the images disappear again.
+Catch Loki is a quick fire game which has 3 user levels and is based on the Norse mythology of Thor, Loki and Asgard which has been recently played out on the big screen in Marvels Thor and Avenger movies. When the user opens the initial page they are greeted with the title, the rules, 3 game levels and 6 Thor characters. The user chooses which level they want to play. When the game starts the Thor images disappear. When they reappear one of them is Loki. The user has to click on Loki before all the images disappear again. The aim is to click on Loki on each occasion that the images appear. If the user hits the Loki image every time they get a 'Congratulations' message at the end telling them they have caught Loki and they should maybe try a harder level. If they lose, the user gets a message telling them to try again. The game is a fun way of passing time and is aimed at all ages.
 
 [Link to live website] (enter here)
 
@@ -70,7 +70,6 @@ Catch Loki is a quick fire game which has 3 user levels and is based on the Nors
 ![Background Image](assets/images/valhalla.jpg)
 
 # Wireframes
-
 ![Wireframes](assets/images/README/catchLokiWF1.png)
 ![Wirefames](assets/images/README/catchLokiWF2.png)
 
@@ -84,7 +83,6 @@ Catch Loki is a quick fire game which has 3 user levels and is based on the Nors
 * [Github](https://github.com/)
 * [Balsamiq](https://balsamiq.com/)
 * [Google Fonts](https://fonts.google.com/)
-* [Font Awesome](https://fontawesome.com/)
 
 # Testing
 * I tested that this page works on Chrome, Edge and Safari.
@@ -101,7 +99,7 @@ The game has a bright cartoon element with a colorful background image
 * ##### As a first time user, I would like to see my score and know how I did at the end of the game.
 The game has a score tallying as the user plays. At the end of the game there a message appears telling the user whether they 'caught Loki' or not
 * ##### As a first time user I would like to have the option to play different levels.
-There are 3 game options; Easy; Hard; Very Hard. The levels are sequentially harder as the user goes through the levels
+There are 3 game options; Easy; Hard; Very Hard. The levels are sequentially harder as the user goes through the them.
 
 
 
@@ -118,9 +116,12 @@ There are 3 game options; Easy; Hard; Very Hard. The levels are sequentially har
 ### CSS
 * No errors were found when passing through the official (Jigsaw) validator
 ![jigsaw validator](assets/images/README/catchLokiCSS.jpg)
+### Javascript
+* No significant issues were found when passing through [jShint](https://jshint.com/)
 ### Accessibility
 * I confirmed that the colours and fonts chosen are easy to read and accessible by running it through lighthouse in devtools
-![validator](assets/images/lighthouse_screenshot.jpg)
+![lighthouse validator](assets/images/README/catchLokiLighthouse.jpg)
+
 
 # Deployment
 * The site was deployed to Github pages. The steps to deploy are as follows:
@@ -141,7 +142,7 @@ The live link can be found here [Catch Loki]()
 
 # Credits
 ### Content
-*
+* The idea for the game and initial coding was taken from the book [Get Coding](https://www.amazon.co.uk/Coding-Learn-JavaScript-Build-Website/dp/1406366846/ref=sr_1_1?crid=33L1I3PHDW29V&keywords=get+coding&qid=1659618829&sprefix=get+coding%2Caps%2C117&sr=8-1). 
 
 ### Media
 * Background Image by Al Seeger from [Pixabay](https://pixabay.com)

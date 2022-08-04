@@ -114,16 +114,16 @@ function newConfiguration() {
   for (var i = 0; i < 6; i++) {
     gameBoard.children[i].className = classToSet;
     gameBoard.children[i].innerHTML = '';
-    gameBoard.children[i].onclick = function () {
+    gameBoard.children[i].onclick = function (score) {
       score += 0;
-    }
+    };
   }
 
   var randomHero = Math.floor(Math.random() * 6) + 1;
   gameBoard.children[randomHero - 1].innerHTML = "";
   gameBoard.children[randomHero - 1].onclick = function () {
     score += 1;
-  }
+  };
   gameBoard.children[randomHero - 1].className = classToSet + " loki";
 }
 
