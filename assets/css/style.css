@@ -9,7 +9,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   font-family: 'Tapestry', cursive;
-
 }
 
 .heading {
@@ -48,7 +47,6 @@ button:hover {
 }
 
 /*Game area */
-
 #game-board {
   margin: 30px;
   text-align: center;
@@ -96,7 +94,6 @@ button:hover {
 }
 
 /* Media queries */
-
 @media screen and (max-width:900px) {
   #game-board {
     height: 600px;
@@ -132,6 +129,5 @@ button:hover {
     height: 90px;
     margin-left: 20px;
     margin-right: 20px;
-
   }
 }

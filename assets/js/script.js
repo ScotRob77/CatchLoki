@@ -26,12 +26,14 @@ const scoreShow = document.querySelector('#score')
 
 // Functions for starting each game
 function startEasy() {
+  // hides games buttons and removes hidden from score
   rulesHide.classList.add('hidden');
   easyHide.classList.add('hidden');
   hardHide.classList.add('hidden');
   vHardHide.classList.add('hidden');
   scoreTotal.classList.remove('hidden');
   scoreTitle.classList.remove('hidden');
+  // function to initiate easy game
   easyGame();
 }
 
@@ -42,6 +44,7 @@ function startHard() {
   vHardHide.classList.add('hidden');
   scoreTotal.classList.remove('hidden');
   scoreTitle.classList.remove('hidden');
+  // function to initiate hard game
   hardGame();
 }
 
@@ -52,8 +55,13 @@ function startVHard() {
   vHardHide.classList.add('hidden');
   scoreTotal.classList.remove('hidden');
   scoreTitle.classList.remove('hidden');
+  // function to initiate very hard game
   vHardGame();
 }
+
+// Game functions: Tiles turn off prior to reappearing on screen ready for user interaction. 
+// New configuration is called which creates the random order of tiles.
+// If the number of turns is reached stopGame function is initiated with relevant message.
 
 // Credit to the book Get Coding on Walker Books for some of the following game code
 // Easy game
@@ -117,10 +125,7 @@ function newConfiguration() {
     score += 1;
   }
   gameBoard.children[randomHero - 1].className = classToSet + " loki"
-
 }
-
-
 
 // Shows user message and calls reset button
 function stopGame() {
