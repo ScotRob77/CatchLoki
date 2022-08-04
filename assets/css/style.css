@@ -89,3 +89,40 @@ button:hover {
 #score-board {
   text-align: center;
 }
+
+/* Media queries */
+
+@media screen and (max-width:900px) {
+  #game-board {
+    height: 600px;
+  }
+
+  .heading {
+    font-size: 3rem;
+    margin: 15px;
+  }
+
+  .tile {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width:680px) {
+  #game-board {
+    height: 600px;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin: 15px;
+  }
+
+  .tile {
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+}
