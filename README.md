@@ -34,30 +34,44 @@ Catch Loki is a quick fire game which has 3 user levels and is based on the Nors
 # Features
 ## Existing Features
 ### Title
-* Uses a well known Norse mythology and Avengers character, so the game title is instantly recognisable.
+Uses a well known Norse mythology and Avengers character, so the game title is instantly recognisable.
+
 ![Title](assets/images/README/catchLokiTitle.jpg)
+
 ### Rules
-* Tells the user how to play the game in a fun and challenging way
+Tells the user how to play the game in a fun and challenging way
+
 ![Rules image](assets/images/README/catchLokiRules.jpg)
 
 ### Game buttons
-* There are 3 game buttons giving the user the opportunity to try harder levels
+There are 3 game buttons giving the user the opportunity to try harder levels
+
 ![Game buttons](assets/images/README/catchLokiButtons.jpg)
 
 ### Characters
-* The home screen starts with 6 Thor characters. When the game starts the characters disappear and reappear with one of them as Loki
+The home screen starts with 6 Thor characters. When the game starts the characters disappear and reappear with one of them as Loki
+
 ![Characters](assets/images/README/catchLokiCharacters.jpg)
 ![Loki](assets/images/README/catchLokiCharacters2.jpg)
 
 ### Score
-* A score tallies up as the game is played
+A score tallies up as the game is played
+
 ![Score](assets/images/README/catchLokiScore.jpg)
-* A message appears depending on how the user has done
+
+A message appears depending on how the user has done.
+
+### If the user has lost
+
 ![Loser message](assets/images/README/catchLokiLose.jpg)
+
+### If the user has won
+
 ![Winner message](assets/images/README/catchLokiWin.jpg)
 
 ### Reset button
-* Once the game has finished a reset button appears taking the user back to the home page.
+Once the game has finished a reset button appears, which when pressed, takes the user back to the home page.
+
 ![Reset button](assets/images/README/catchLokiReset.jpg)
 
 ### Future features
@@ -124,25 +138,31 @@ There are 3 game options; Easy; Hard; Very Hard. The levels are sequentially har
 
 
 # Deployment
-* The site was deployed to Github pages. The steps to deploy are as follows:
-     * In the Github repository, navigate to the Settings tab
-     * Scroll down to the Github Pages section and click on 'Check it out here!'
-     * From the source section drop-down menu, select the Main Branch and click save
-     * Once the Main Branch has been selected and saved the page provides the link to the completed website
-     * Any changes made to the main branch and pushed to Github will take effect on the live project.
+This project was deployed using the steps below with version releasing active. Please do not make any changes to files within this repository as any changes pushed to the main branch will be automatically reflected on the live website. Instead please follow the second set of steps which guide you to forking and cloning the website where changes can be made without impact to the live website. Thanks!
+
+1. Logged into [my GitHub repository](https://github.com/ScotRob77/CatchLoki)
+1. Clicked on the "Settings" button in the main Repository menu.
+1. Clicked "Pages" from the left hand side navigation menu.
+1. Within the Source section, clicked the "Branch" button and changed from 'None' to 'Main' in the dropdown menu.
+1. The page automatically refreshed with a url displayed.
+1. Tested the link by clicking on the url.
 
 The live link can be found here [Catch Loki]()
 
-### Cloning
-* Go to https://github.com/ScotRob77/CatchLoki repsoitory on Github
-* Click 'Code' which is to the left of the Gitpod button
-* Copy link
-* Open a Gitbash terminal and navigate to the directory where you want to locate the clone
-* On the command line, type 'git clone' and paste the copied url. Press Enter to begin
+## Cloning/Forking
+To fork this website to either propose changes or to use as an idea for another website, follow these steps:
+1. If you haven't yet, you should first set up Git. Don't forget to set up authentication to GitHub.com from Git as well.
+1. Navigate to [Catch Loki](https://github.com/ScotRob77/CatchLoki).
+1. Click the 'Fork' button on the upper right part fo the page. It's in between 'Watch' and 'Star'.
+1. You will now have a fork of the Catch Loki repository added to your GitHub profile. Navigate to your own profile and find the forked repository to add the required files.
+1. Above the list of forked files click the 'Code' button.
+1. A drop-down menu will appear providing a choice of cloning options. Select the one which is applicable to your setup.
+Further details on completing the final step can be found on GitHub's ['Fork a Repo'](https://docs.github.com/en/get-started/quickstart/fork-a-repo) page.
 
 # Credits
 ### Content
 * The idea for the game and initial coding was taken from the book [Get Coding](https://www.amazon.co.uk/Coding-Learn-JavaScript-Build-Website/dp/1406366846/ref=sr_1_1?crid=33L1I3PHDW29V&keywords=get+coding&qid=1659618829&sprefix=get+coding%2Caps%2C117&sr=8-1). 
+* The Deployment and Forking text in the README was taken from [RickofManc](https://github.com/RickofManc/60-seconds-to-save-earth/blob/main/README.md?plain=1)
 
 ### Media
 * Background Image by Al Seeger from [Pixabay](https://pixabay.com)
