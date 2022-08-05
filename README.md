@@ -145,8 +145,7 @@ Once the game has finished a reset button appears, which when pressed, takes the
 # Bugs
 ### Unsolved bugs
 * The score tallies on every click meaning the user can win if they have a quick finger without clicking on 'Loki' on every turn.
-### Solved Bugs
-* 
+* On initial game and the first reveal of characters, the Loki character can lag with lower internet speeds.
 
 # Validator Testing
 ### HTML
