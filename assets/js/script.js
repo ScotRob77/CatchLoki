@@ -1,4 +1,4 @@
-// Button declarations
+// Adds event listeners to all buttons
 let easyStart = document.getElementById('easy-game');
 easyStart.addEventListener('click', startEasy);
 
