@@ -94,7 +94,7 @@ function vHardGame() {
   if (numTurnsSoFar >= 40) {
     stopGame();
   } else {
-    setTimeout(vHardGame, tileVisible ? 900 : 1500);
+    setTimeout(vHardGame, tileVisible ? 800 : 1500);
     numTurnsSoFar += 1;
     scoreShow.textContent = score;
   }
