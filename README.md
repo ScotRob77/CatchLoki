@@ -5,7 +5,7 @@ Catch Loki is a quick fire game which has 3 user levels and is based on the Nors
 
 ***
 
-![Screenshot Responsive](assets/images/README/catchLokiResponsive.jpg)
+![Screenshot Responsive](README/images/catchLokiResponsive.jpg)
 
 ***
 
@@ -52,43 +52,43 @@ Catch Loki is a quick fire game which has 3 user levels and is based on the Nors
 ### Title
 Uses a well known Norse mythology and Avengers character, so the game title is instantly recognisable.
 
-![Title](assets/images/README/catchLokiTitle.jpg)
+![Title](README/images/catchLokiTitle.jpg)
 
 ### Rules
 Tells the user how to play the game in a fun and challenging way
 
-![Rules image](assets/images/README/catchLokiRules.jpg)
+![Rules image](README/images/catchLokiRules.jpg)
 
 ### Game buttons
 There are 3 game buttons giving the user the opportunity to try harder levels
 
-![Game buttons](assets/images/README/catchLokiButtons.jpg)
+![Game buttons](README/images/catchLokiButtons.jpg)
 
 ### Characters
 The home screen starts with 6 Thor characters. When the game starts the characters disappear and reappear with one of them as Loki
 
-![Characters](assets/images/README/catchLokiCharacters.jpg)
-![Loki](assets/images/README/catchLokiCharacters2.jpg)
+![Characters](README/images/catchLokiCharacters.jpg)
+![Loki](README/images/catchLokiCharacters2.jpg)
 
 ### Score
 A score tallies up as the game is played
 
-![Score](assets/images/README/catchLokiScore.jpg)
+![Score](README/images/catchLokiScore.jpg)
 
 A message appears depending on how the user has done.
 
 ### If the user has lost
 
-![Loser message](assets/images/README/catchLokiLose.jpg)
+![Loser message](README/images/catchLokiLose.jpg)
 
 ### If the user has won
 
-![Winner message](assets/images/README/catchLokiWin.jpg)
+![Winner message](README/images/catchLokiWin.jpg)
 
 ### Reset button
 Once the game has finished a reset button appears, which when pressed, takes the user back to the home page.
 
-![Reset button](assets/images/README/catchLokiReset.jpg)
+![Reset button](README/images/catchLokiReset.jpg)
 
 ### Future features
 * Add more hero characters
@@ -104,8 +104,8 @@ Once the game has finished a reset button appears, which when pressed, takes the
 ***
 
 # Wireframes
-![Wireframes](assets/images/README/catchLokiWF1.png)
-![Wirefames](assets/images/README/catchLokiWF2.png)
+![Wireframes](README/images/catchLokiWF1.png)
+![Wirefames](README/images/catchLokiWF2.png)
 
 ***
 
@@ -125,8 +125,17 @@ Once the game has finished a reset button appears, which when pressed, takes the
 * I tested that this page works on Chrome, Edge and Safari.
 * I confirmed that this project is responsive and works on all screen sizes using the dev tools available on Chrome and Edge.
 * I confirmed that all text is readable and easy to understand.
-* I confirmed that the game buttons work as they should and the levels get gradually harder.
-* I have confirmed that the reset button takes the user back to the home page.
+
+* I tested all the buttons and tiles, results below
+
+| Test          | Action        | Expected Result  | Outcome |
+| ------------- |:-------------:| ---------------:| ------: |
+| Easy Game Button| Button clicked | Easy game start | PASS |
+| Hard Game Button| Button clicked | Hard game start | PASS |
+| Very Hard Game Button| Button clicked | Very Hard game start | PASS |
+| Reset Button| Button clicked | Page resets | PASS |
+| Tiles work when clicked| Tiles clicked | When Loki clicked score increments, when Thor clicked no score is noted | PASS |
+
 
 ##  Testing user stories
 * #### As a first time user, I want to be able to easily understand how to play the game.
@@ -150,15 +159,15 @@ Once the game has finished a reset button appears, which when pressed, takes the
 # Validator Testing
 ### HTML
 * No errors were returned when passing through the official W3C validator
-![w3c validator](assets/images/README/catchLokiW3.jpg)
+![w3c validator](README/images/catchLokiW3.jpg)
 ### CSS
 * No errors were found when passing through the official (Jigsaw) validator
-![jigsaw validator](assets/images/README/catchLokiCSS.jpg)
+![jigsaw validator](README/images/catchLokiCSS.jpg)
 ### Javascript
 * No significant issues were found when passing through [jShint](https://jshint.com/)
 ### Accessibility
 * I confirmed that the colours and fonts chosen are easy to read and accessible by running it through lighthouse in devtools
-![lighthouse validator](assets/images/README/catchLokiLighthouse.jpg)
+![lighthouse validator](README/images/catchLokiLighthouse.jpg)
 
 
 # Deployment
