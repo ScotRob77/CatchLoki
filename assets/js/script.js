@@ -25,38 +25,31 @@ const reset = document.querySelector('.js-reset');
 const scoreShow = document.querySelector('#score');
 const loserMessage = document.querySelector('.loser');
 
-// Functions for starting each game
-function startEasy() {
-  // hides games buttons and removes hidden from score
+/* Function for game set up */
+function setupGame() {
   rulesHide.classList.add('hidden');
   easyHide.classList.add('hidden');
   hardHide.classList.add('hidden');
   vHardHide.classList.add('hidden');
   scoreTotal.classList.remove('hidden');
   scoreTitle.classList.remove('hidden');
-  // function to initiate easy game
+}
+
+/* Initiates easy game */
+function startEasy() {
+  setupGame();
   easyGame();
 }
 
+/* Initiates hard game */
 function startHard() {
-  rulesHide.classList.add('hidden');
-  easyHide.classList.add('hidden');
-  hardHide.classList.add('hidden');
-  vHardHide.classList.add('hidden');
-  scoreTotal.classList.remove('hidden');
-  scoreTitle.classList.remove('hidden');
-  // function to initiate hard game
+  setupGame();
   hardGame();
 }
 
+/* Initiates very hard game */
 function startVHard() {
-  rulesHide.classList.add('hidden');
-  easyHide.classList.add('hidden');
-  hardHide.classList.add('hidden');
-  vHardHide.classList.add('hidden');
-  scoreTotal.classList.remove('hidden');
-  scoreTitle.classList.remove('hidden');
-  // function to initiate very hard game
+  setupGame();
   vHardGame();
 }
 
