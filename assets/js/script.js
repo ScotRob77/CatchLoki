@@ -1,4 +1,4 @@
-// Adds event listeners to all buttons
+/* Adds event listeners to all buttons */
 const easyStart = document.getElementById('easy-game');
 easyStart.addEventListener('click', startEasy);
 
@@ -66,13 +66,13 @@ function easyGame() {
   if (numTurnsSoFar >= 40) {
     stopGame();
   } else {
-    setTimeout(easyGame, tileVisible ? 2500 : 2000);
+    setTimeout(easyGame, tileVisible ? 2000 : 2000);
     numTurnsSoFar += 1;
     scoreShow.textContent = score;
   }
 }
 
-// Hard game
+/* Hard game */
 function hardGame() {
   tileVisible = !tileVisible;
   newConfiguration();
@@ -86,7 +86,7 @@ function hardGame() {
   }
 }
 
-// very hard game
+/* Very hard game */
 function vHardGame() {
   tileVisible = !tileVisible;
   newConfiguration();
@@ -100,8 +100,8 @@ function vHardGame() {
   }
 }
 
-// Creates the characters to flash on and off
-// Sets configuration of characters
+/* Creates the characters to flash on and off
+Sets configuration of characters */
 function newConfiguration() {
   let classToSet = tileVisible ? "tile visible" : "tile hidden";
 
@@ -122,7 +122,7 @@ function newConfiguration() {
   gameBoard.children[randomHero - 1].className = classToSet + " loki";
 }
 
-// Shows user message and calls reset button
+/* Shows user message at end of game and calls reset button */
 function stopGame() {
   if (score >= 10) {
     scoreTitle.classList.add('hidden');
@@ -139,7 +139,7 @@ function stopGame() {
   }
 }
 
-// Resets page to show game buttons
+/* Resets page to show game buttons */
 function resetGame() {
   window.location.reload();
 }
