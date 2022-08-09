@@ -5,7 +5,7 @@ Catch Loki is a quick fire game which has 3 user levels and is based on the Nors
 
 ***
 
-![Screenshot Responsive](README/images/catchLokiResponsive.jpg)
+![Screenshot Responsive](README/images/catchlokiresponsive.jpg)
 
 ***
 
@@ -52,43 +52,43 @@ Catch Loki is a quick fire game which has 3 user levels and is based on the Nors
 ### Title
 Uses a well known Norse mythology and Avengers character, so the game title is instantly recognisable.
 
-![Title](README/images/catchLokiTitle.jpg)
+![Title](README/images/catchlokititle.jpg)
 
 ### Rules
 Tells the user how to play the game in a fun and challenging way
 
-![Rules image](README/images/catchLokiRules.jpg)
+![Rules image](README/images/catchlokirules.jpg)
 
 ### Game buttons
 There are 3 game buttons giving the user the opportunity to try harder levels
 
-![Game buttons](README/images/catchLokiButtons.jpg)
+![Game buttons](README/images/catchlokibuttons.jpg)
 
 ### Characters
 The home screen starts with 6 Thor characters. When the game starts the characters disappear and reappear with one of them as Loki
 
-![Characters](README/images/catchLokiCharacters.jpg)
-![Loki](README/images/catchLokiCharacters2.jpg)
+![Characters](README/images/catchlokicharacters.jpg)
+![Loki](README/images/catchlokicharacters2.jpg)
 
 ### Score
 A score tallies up as the game is played
 
-![Score](README/images/catchLokiScore.jpg)
+![Score](README/images/catchlokiscore.jpg)
 
 A message appears depending on how the user has done.
 
 ### If the user has lost
 
-![Loser message](README/images/catchLokiLose.jpg)
+![Loser message](README/images/catchlokilose.jpg)
 
 ### If the user has won
 
-![Winner message](README/images/catchLokiWin.jpg)
+![Winner message](README/images/catchlokiwin.jpg)
 
 ### Reset button
 Once the game has finished a reset button appears, which when pressed, takes the user back to the home page.
 
-![Reset button](README/images/catchLokiReset.jpg)
+![Reset button](README/images/catchlokireset.jpg)
 
 ### Future features
 * Add more hero characters
@@ -104,8 +104,8 @@ Once the game has finished a reset button appears, which when pressed, takes the
 ***
 
 # Wireframes
-![Wireframes](README/images/catchLokiWF1.png)
-![Wirefames](README/images/catchLokiWF2.png)
+![Wireframes](README/images/catchlokiwf1.png)
+![Wirefames](README/images/catchlokiwf2.png)
 
 ***
 
@@ -159,15 +159,15 @@ Once the game has finished a reset button appears, which when pressed, takes the
 # Validator Testing
 ### HTML
 * No errors were returned when passing through the official W3C validator
-![w3c validator](README/images/catchLokiW3.jpg)
+![w3c validator](README/images/catchlokiw3.jpg)
 ### CSS
 * No errors were found when passing through the official (Jigsaw) validator
-![jigsaw validator](README/images/catchLokiCSS.jpg)
+![jigsaw validator](README/images/catchlokicss.jpg)
 ### Javascript
 * No significant issues were found when passing through [jShint](https://jshint.com/)
 ### Accessibility
 * I confirmed that the colours and fonts chosen are easy to read and accessible by running it through lighthouse in devtools
-![lighthouse validator](README/images/catchLokiLighthouse.jpg)
+![lighthouse validator](README/images/catchlokilighthouse.jpg)
 
 
 # Deployment
