@@ -14,6 +14,8 @@ gameReset.addEventListener('click', resetGame);
 let numTurnsSoFar = 0;
 let score = 0;
 let tileVisible = true;
+
+/* Declare constants for DOM elements */
 const gameBoard = document.getElementById('game-board');
 const rulesHide = document.querySelector('.js-rules');
 const easyHide = document.querySelector('.js-easy-start');
