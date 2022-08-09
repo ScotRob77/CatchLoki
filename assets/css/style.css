@@ -28,6 +28,7 @@ body {
   font-size: 1.2rem;
   margin-top: 0;
   margin-bottom: 20px;
+  /* Add a background color so the text is more readable */
   background-image: linear-gradient(#051937, #182203);
 }
 
