@@ -25,7 +25,7 @@ const reset = document.querySelector('.js-reset');
 const scoreShow = document.querySelector('#score');
 const loserMessage = document.querySelector('.loser');
 
-/* Function for game set up */
+/* Hides game buttons and reveals score */
 function setupGame() {
   rulesHide.classList.add('hidden');
   easyHide.classList.add('hidden');
@@ -53,12 +53,12 @@ function startVHard() {
   vHardGame();
 }
 
-// Game functions: Tiles turn off prior to reappearing on screen ready for user interaction. 
-// New configuration is called which creates the random order of tiles.
-// If the number of turns is reached stopGame function is initiated with relevant message.
+/* Game functions: Tiles turn off prior to reappearing on screen ready for user interaction. 
+New configuration is called which creates the random order of tiles.
+If the number of turns is reached stopGame function is initiated with relevant message. */
 
-// Credit to the book Get Coding on Walker Books for some of the following game code
-// Easy game
+/* Credit to the book Get Coding on Walker Books for some of the following game code */
+/* Easy game */
 function easyGame() {
   tileVisible = !tileVisible;
   newConfiguration();
@@ -80,7 +80,7 @@ function hardGame() {
   if (numTurnsSoFar >= 40) {
     stopGame();
   } else {
-    setTimeout(hardGame, tileVisible ? 1000 : 1500);
+    setTimeout(hardGame, tileVisible ? 1200 : 1500);
     numTurnsSoFar += 1;
     scoreShow.textContent = score;
   }
@@ -94,7 +94,7 @@ function vHardGame() {
   if (numTurnsSoFar >= 40) {
     stopGame();
   } else {
-    setTimeout(vHardGame, tileVisible ? 700 : 1500);
+    setTimeout(vHardGame, tileVisible ? 900 : 1500);
     numTurnsSoFar += 1;
     scoreShow.textContent = score;
   }
@@ -103,16 +103,18 @@ function vHardGame() {
 // Creates the characters to flash on and off
 // Sets configuration of characters
 function newConfiguration() {
-  var classToSet = tileVisible ? "tile visible" : "tile hidden";
-  for (var i = 0; i < 6; i++) {
-    gameBoard.children[i].className = classToSet;
-    gameBoard.children[i].innerHTML = '';
-    gameBoard.children[i].onclick = function (score) {
+  let classToSet = tileVisible ? "tile visible" : "tile hidden";
+
+  for (let i = 0; i < 6; i++) {
+    let currentTile = gameBoard.children[i];
+    currentTile.className = classToSet;
+    currentTile.innerHTML = '';
+    currentTile.onclick = function (score) {
       score += 0;
     };
   }
 
-  var randomHero = Math.floor(Math.random() * 6) + 1;
+  let randomHero = Math.floor(Math.random() * 6) + 1;
   gameBoard.children[randomHero - 1].innerHTML = "";
   gameBoard.children[randomHero - 1].onclick = function () {
     score += 1;
