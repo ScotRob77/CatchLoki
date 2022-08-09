@@ -1,25 +1,25 @@
 // Adds event listeners to all buttons
-let easyStart = document.getElementById('easy-game');
+const easyStart = document.getElementById('easy-game');
 easyStart.addEventListener('click', startEasy);
 
-let hardStart = document.getElementById('hard-game');
+const hardStart = document.getElementById('hard-game');
 hardStart.addEventListener('click', startHard);
 
-let vHardStart = document.getElementById('v-hard-game');
+const vHardStart = document.getElementById('v-hard-game');
 vHardStart.addEventListener('click', startVHard);
 
-let gameReset = document.querySelector('#reset-game');
+const gameReset = document.querySelector('#reset-game');
 gameReset.addEventListener('click', resetGame);
 
-var numTurnsSoFar = 0;
-var score = 0;
-var tileVisible = true;
-var gameBoard = document.getElementById('game-board');
+let numTurnsSoFar = 0;
+let score = 0;
+let tileVisible = true;
+const gameBoard = document.getElementById('game-board');
 const rulesHide = document.querySelector('.js-rules');
 const easyHide = document.querySelector('.js-easy-start');
 const hardHide = document.querySelector('.js-hard-start');
 const vHardHide = document.querySelector('.js-vhard-start');
-var scoreTotal = document.querySelector('.js-score');
+const scoreTotal = document.querySelector('.js-score');
 const scoreTitle = document.querySelector('.js-scores');
 const reset = document.querySelector('.js-reset');
 const scoreShow = document.querySelector('#score');
