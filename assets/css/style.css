@@ -67,6 +67,11 @@ button:hover {
   text-align: center;
 }
 
+.tile.visible,
+.tile.hidden {
+  cursor: pointer;
+}
+
 .hidden {
   display: none
 }
