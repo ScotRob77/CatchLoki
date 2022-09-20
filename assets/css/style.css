@@ -1,139 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
 
 body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background-image: url(../images/valhalla.jpg);
-  background-size: 100%;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: 'Tapestry', cursive;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url(../images/valhalla.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Tapestry', cursive;
 }
 
 .heading {
-  text-align: center;
-  color: white;
-  font-size: 4rem;
-  margin: 15px;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    margin: 15px;
 }
 
 #head-rules {
-  text-align: center;
+    text-align: center;
 }
 
 #rules {
-  text-align: center;
-  color: white;
-  font-size: 1.2rem;
-  margin-top: 0;
-  margin-bottom: 20px;
-  /* Add a background color so the text is more readable */
-  background-image: linear-gradient(#051937, #182203);
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    /* Add a background color so the text is more readable */
+    background-image: linear-gradient(#051937, #182203);
 }
 
 /* Start buttons */
 button {
-  background-color: red;
-  color: white;
-  font-family: 'Tapestry', cursive;
-  font-size: 2.5rem;
-  margin-right: 10px;
-  margin-left: 10px;
+    background-color: red;
+    color: white;
+    font-family: 'Tapestry', cursive;
+    font-size: 2.5rem;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 button:hover {
-  background-color: white;
-  color: red;
+    background-color: white;
+    color: red;
 }
 
 /*Game area */
 #game-board {
-  margin: 30px;
-  text-align: center;
+    margin: 30px;
+    text-align: center;
 }
 
 .start {
-  text-align: center;
+    text-align: center;
 }
 
 .tile {
-  background: url(../images/thor.png);
-  background-size: cover;
-  width: 150px;
-  height: 150px;
-  padding: 10px;
-  margin: 10px;
-  display: inline-block;
-  text-align: center;
+    background: url(../images/thor.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
 }
 
 .tile.visible,
 .tile.hidden {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .hidden {
-  display: none
+    display: none
 }
 
 .visible {
-  display: inline-block;
+    display: inline-block;
 }
 
 .loki {
-  background: url(../images/loki.png);
-  background-size: cover;
+    background: url(../images/loki.png);
+    background-size: cover;
 }
 
 /* Score board */
 .scores {
-  color: white;
-  font-family: 'Tapestry', cursive;
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 10px;
+    color: white;
+    font-family: 'Tapestry', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #score-board {
-  text-align: center;
+    text-align: center;
 }
 
 /* Media queries */
 @media screen and (max-width:900px) {
-  #game-board {
-    height: 600px;
-  }
+    #game-board {
+        height: 600px;
+    }
 
-  .heading {
-    font-size: 3rem;
-    margin: 15px;
-  }
+    .heading {
+        font-size: 3rem;
+        margin: 15px;
+    }
 
-  .tile {
-    width: 90px;
-    height: 90px;
-  }
+    .tile {
+        width: 90px;
+        height: 90px;
+    }
 }
 
 @media screen and (max-width:680px) {
-  body {
-    background-size: auto;
-  }
+    body {
+        background-size: auto;
+    }
 
-  #game-board {
-    height: 600px;
-  }
+    #game-board {
+        height: 600px;
+    }
 
-  .heading {
-    font-size: 2rem;
-    margin: 15px;
-  }
+    .heading {
+        font-size: 2rem;
+        margin: 15px;
+    }
 
-  .tile {
-    width: 90px;
-    height: 90px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+    .tile {
+        width: 90px;
+        height: 90px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
