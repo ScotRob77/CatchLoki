@@ -35,6 +35,7 @@ function setupGame() {
   vHardHide.classList.add('hidden');
   scoreTotal.classList.remove('hidden');
   scoreTitle.classList.remove('hidden');
+  reset.classList.remove('hidden');
 }
 
 /* Initiates easy game */
